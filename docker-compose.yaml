@@ -5,7 +5,8 @@ networks:
     name: expense
 volumes:
   mysql:
-  external: true
+    external: true
+    # docker volume create mysql
 services:
   mysql:
     image: mysql:v1.0
